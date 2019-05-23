@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Running Dots</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/765f3456-03c0-47a2-9ee9-9b0d5f17d280%2Ffavicon.ico?1524697442522"/>
+    <script src="/script.js"></script>
+  </head>
+  <body onload="carregar(); aside_css('none')">
+    <div id="canvas-here" onmousedown="pos(event)"></div>
+    <aside onmouseover="aside_css('block')" onmouseout="aside_css('none')">
+      <p onclick="mudarvelocidade(-5)">+ Speed</p>
+      <p onclick="mudarvelocidade(5)">- Speed</p>
+      <p onclick="trocar_pos_jump()">Position Jump</p>
+      <p onclick="novo_dot()">New dot</p>
+      <p onclick="autodot = false; limpar_dots()">Remove dots</p>
+      <p onclick="autodot = true; limpar_dots()">Auto-dots</p>
+      <p onclick="mudar_cor(document.getElementById('color_input').value)" style="margin-bottom: 0;">Change color</p>
+      <input id="color_input" placeholder="Hexa or name" value="white">
+      <p onclick="mudar_formula()">Change click animation</p>
+      <p id="credit" onclick="test()">G. Otani P. - April 2018</p>
+    </aside>
+  </body>
+</html>

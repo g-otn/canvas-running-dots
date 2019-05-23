@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #CEECF5;
+  background: black;
+}
+
+aside {
+  padding: 10px 10px 10px;
+  width: 0.5%;
+  min-height: 70vh;
+  height: auto;
+  max-height: 80vh;
+  box-shadow: 0 0 7px white;
+  position: fixed;
+  background-color: rgba(16,16,16,.7);
+  right: 0;
+  top: 10%;
+  z-index: 15;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+aside:hover {
+  width: 10%;
+  color: white;
+}
+
+p#credit {
+  position: absolute;
+  border: none;
+  color: grey;
+  margin: 5px 1px 5px;
+  font-size: xx-small;
+  padding: 0;
+  bottom: 0;
+  cursor: default;
+  z-index: -1;
+}
+
+p#credit:hover {
+  color: cyan;
+  background-color: transparent;
+}
+
+aside p {
+  display: block;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 5px;
+  font-size: 2.5vh;
+}
+
+aside p:hover {
+  border: 2px solid rgba(0,0,255,.5);
+  background: rgba(0,0,0,.5);
+  cursor: pointer;
+}
+
+aside p:active {
+  border: 2px solid rgba(0,255,255,.5);
+}
+
+input {
+  width: 80%;
+  border-radius: 5px;
+  background: black;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 90%;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 2vh;
+  margin-bottom: 10px;
+}
+
+canvas {
+  background: black;
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
