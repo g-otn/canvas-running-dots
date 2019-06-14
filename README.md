@@ -1,5 +1,6 @@
 # Running dots
 Generates dots (tiny squares) that bounces and moves to random directions inside the browser's window. 
+
 *Gera pontos (ou melhor, pequenos quadrados) que quicam e se movem em direções aleatórias dentro da janela do navegador.*
 
 [Live version](https://running-dots.glitch.me/) on Glitch. 
